@@ -26,22 +26,44 @@ git init
 
 Queremos guardar lo que llevamos de proyecto (el fichero principal.md) en la base de datos de Git que
 tenemos en local  Qu  comandos podemos ejecutar para hacer esto?
-Nota(*) Si lo prefieres hacer en un comando tambi n vale
-Ignorar
+Nota(*) Si lo prefieres hacer en un comando también vale
+```bash
+git add .
+git commit -m "Añadir principal.md y README.md"
+```
+
+### Ignorar
 Resulta que la herramienta que usamos para editar ficheros va creando ficheros temporales con
 extension .bak, vamos a simular esto, creamos dos ficheros nuevos:
-./detalle.md
+*./detalle.md*
+```bash
 Esto es un texto de detalle
-./detalle.md.bak
+```
+
+*./detalle.md.bak*
+```bash
 Esto es un texto de detal
-Antes de subir a staging los cambios queremos ver en que estado est n los ficheros, para ello
+```
+
+Antes de subir a staging los cambios queremos ver en que estado están los ficheros, para ello
 ejecutamos el comando:
- Anda! Queremos hacer commit del fichero detalle.md pero no queremos que se suban los ficheros con
-extension .bak, as  que decidimos a adir una entrada al .gitignore  Qu  contenido tendr amos que
-a adir?
-Indica aqu  tu .gitignore
-Pista: para la extensi n te va a hacer falta usar un patr n, m s info:
+```bash
+git status
+```
+
+Anda! Queremos hacer commit del fichero detalle.md pero no queremos que se suban los ficheros con
+extension .bak, así que decidimos a añdir una entrada al .gitignore. Qué contenido tendríamos que
+añadir?
+Indica aquí tu *.gitignore*
+```bash
+*.bak
+```
+
+Pista: para la extensión te va a hacer falta usar un patrón, más info:
 https://www.atlassian.com/es/git/tutorials/saving-changes/gitignore
+
+
+
 Ahora que lo tenemos vamos a meter los cambios en la base de datos de git (el fichero detalle.md),  Que
 comandos o comando te har an falta?
 Nota(*) Si lo prefieres hacer en un comando tambi n vale
